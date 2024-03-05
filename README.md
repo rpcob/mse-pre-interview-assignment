@@ -15,4 +15,4 @@ npm install axios
 The code fetches default values from an API at 'http://localhost:3004/defaults'.
 
 npm install -g json-server
-json-server --watch defaultValues.json --port 3004
+json-server --watch defaultData.json --port 3004

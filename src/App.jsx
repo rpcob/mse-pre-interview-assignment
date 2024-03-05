@@ -1,5 +1,6 @@
 import React from 'react';
 import useForm from './useForm';
+import ChildComponent from './ChildComponent'; // Import the child component
 
 function App() {
   const {
@@ -13,8 +14,11 @@ function App() {
     handleReset
   } = useForm();
 
+ const header = "MSE Pre-Interview"; // Dynamic header
+
   return (
     <form onSubmit={handleSubmit}>
+      <ChildComponent header={header} />
       <label>
         Sample Size:
         <input
